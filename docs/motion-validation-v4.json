@@ -1,0 +1,8 @@
+{
+  "source": "64 actual browser screenshots; fixed Nuorilang camera; no synthetic frames",
+  "frames": 64,
+  "elapsedCaptureSeconds": 4.612,
+  "encodedFramesPerSecond": 13.660017346053772,
+  "changedPixelsAbove12InFixedWaterfallRegion": 16991,
+  "videoBytes": 614145
+}

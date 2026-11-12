@@ -1,0 +1,215 @@
+{
+  "version": 2,
+  "settings": {
+    "aoRays": 12,
+    "aoDistance": 1.4,
+    "shadowRays": 4,
+    "sunDirection": [
+      -13,
+      24,
+      10
+    ],
+    "sunRadius": 0.065,
+    "epsilon": 0.009,
+    "shadowDistance": 75
+  },
+  "module": "src/landscape-v2.js",
+  "exportName": "buildLandscapeV2",
+  "meshCount": 21,
+  "vertexCount": 599100,
+  "sceneHash": "86900e2b",
+  "triangles": 181436,
+  "bounds": {
+    "min": [
+      -14.303032875061035,
+      -1.0399999618530273,
+      -11.175714492797852
+    ],
+    "max": [
+      14.418330192565918,
+      8.661382675170898,
+      11.63242244720459
+    ]
+  },
+  "meshes": [
+    {
+      "name": "one-continuous-folded-valley",
+      "vertexOffset": 0,
+      "vertexCount": 50412,
+      "hash": "5ec1aa89",
+      "flags": 0
+    },
+    {
+      "name": "five-scalloped-paper-strata",
+      "vertexOffset": 50412,
+      "vertexCount": 10800,
+      "hash": "2da755fd",
+      "flags": 0
+    },
+    {
+      "name": "five-connected-alpine-paper-massifs",
+      "vertexOffset": 61212,
+      "vertexCount": 2367,
+      "hash": "a01329bb",
+      "flags": 0
+    },
+    {
+      "name": "separate-ivory-snow-papers",
+      "vertexOffset": 63579,
+      "vertexCount": 6804,
+      "hash": "671f4596",
+      "flags": 0
+    },
+    {
+      "name": "warm-mountain-fold-edges",
+      "vertexOffset": 70383,
+      "vertexCount": 72,
+      "hash": "9c19ca9b",
+      "flags": 0
+    },
+    {
+      "name": "water-wuhua",
+      "vertexOffset": 70455,
+      "vertexCount": 24924,
+      "hash": "7e457112",
+      "flags": 1
+    },
+    {
+      "name": "water-changhai",
+      "vertexOffset": 95379,
+      "vertexCount": 7038,
+      "hash": "83f52cf4",
+      "flags": 1
+    },
+    {
+      "name": "water-wucai",
+      "vertexOffset": 102417,
+      "vertexCount": 2172,
+      "hash": "81a0aeef",
+      "flags": 1
+    },
+    {
+      "name": "water-mirror",
+      "vertexOffset": 104589,
+      "vertexCount": 3126,
+      "hash": "3679f4f1",
+      "flags": 1
+    },
+    {
+      "name": "water-nuorilang-head",
+      "vertexOffset": 107715,
+      "vertexCount": 5334,
+      "hash": "7681ec2b",
+      "flags": 1
+    },
+    {
+      "name": "water-shuzheng-upper",
+      "vertexOffset": 113049,
+      "vertexCount": 4494,
+      "hash": "3d00c3da",
+      "flags": 1
+    },
+    {
+      "name": "water-shuzheng-middle",
+      "vertexOffset": 117543,
+      "vertexCount": 4014,
+      "hash": "617aa0c2",
+      "flags": 1
+    },
+    {
+      "name": "water-shuzheng-lower",
+      "vertexOffset": 121557,
+      "vertexCount": 3690,
+      "hash": "4436eb12",
+      "flags": 1
+    },
+    {
+      "name": "layered-mineral-shores-and-submerged-timber",
+      "vertexOffset": 125247,
+      "vertexCount": 39408,
+      "hash": "a2c68987",
+      "flags": 0
+    },
+    {
+      "name": "travertine-shoulders-pearl",
+      "vertexOffset": 164655,
+      "vertexCount": 252,
+      "hash": "537250a0",
+      "flags": 0
+    },
+    {
+      "name": "travertine-shoulders-nuorilang",
+      "vertexOffset": 164907,
+      "vertexCount": 252,
+      "hash": "c6723d56",
+      "flags": 0
+    },
+    {
+      "name": "travertine-shoulders-shuzheng-one",
+      "vertexOffset": 165159,
+      "vertexCount": 126,
+      "hash": "28b9aaac",
+      "flags": 0
+    },
+    {
+      "name": "travertine-shoulders-shuzheng-two",
+      "vertexOffset": 165285,
+      "vertexCount": 126,
+      "hash": "0493d296",
+      "flags": 0
+    },
+    {
+      "name": "village-and-shore-boardwalks",
+      "vertexOffset": 165411,
+      "vertexCount": 92376,
+      "hash": "849c3025",
+      "flags": 0
+    },
+    {
+      "name": "separated-firs-and-bowed-fan-crowns",
+      "vertexOffset": 257787,
+      "vertexCount": 313092,
+      "hash": "5a344857",
+      "flags": 0
+    },
+    {
+      "name": "paper-meadow-and-understory",
+      "vertexOffset": 570879,
+      "vertexCount": 28221,
+      "hash": "49fd1bed",
+      "flags": 0
+    }
+  ],
+  "bytes": 1198584,
+  "channels": [
+    "ambient visibility / 255",
+    "sun visibility / 255"
+  ],
+  "runtime": "Apply AO in WebGL; AO + static sunlight visibility in the software renderer. Geometry fingerprint checked before any mutation.",
+  "report": {
+    "seconds": 19.36,
+    "vertices": 599100,
+    "uniqueSamples": 435487,
+    "opaqueTriangles": 181436,
+    "ambientMean": 0.6591894050225665,
+    "ambientMinimum": 0,
+    "ambientPercentiles": [
+      0.01568627450980392,
+      0.43529411764705883,
+      0.7529411764705882,
+      0.9450980392156862,
+      1
+    ],
+    "sunMean": 0.7666735004467485,
+    "fullyShadowedFraction": 0.21536805207811718
+  },
+  "validation": {
+    "applied": true,
+    "meshCount": 21,
+    "vertexCount": 599100,
+    "sceneHash": "86900e2b",
+    "mode": "ambient + static sun",
+    "minimumFactor": 0.43,
+    "meanFactor": 0.7646452083974171
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "artifact": "dist/assets/jiuzhai-paper-model.glb",
+  "format": "glTF 2.0 binary",
+  "threeVersion": "180",
+  "bytes": 13024748,
+  "mebibytes": 12.421,
+  "provenance": "Procedurally constructed Three.js paper geometry following the generated composition concept. Not a neural image-to-3D conversion.",
+  "original": {
+    "meshes": 212,
+    "vertices": 535746,
+    "triangles": 178582,
+    "invalidVertexValues": 0,
+    "bounds": {
+      "min": [
+        -12.35749626159668,
+        -0.6980000138282776,
+        -8.560530662536621
+      ],
+      "max": [
+        11.341104507446289,
+        8.78399999141693,
+        8.523194313049316
+      ],
+      "size": [
+        23.69860076904297,
+        9.482000005245208,
+        17.083724975585938
+      ]
+    }
+  },
+  "reconstructed": {
+    "meshes": 224,
+    "vertices": 538626,
+    "triangles": 178582,
+    "invalidVertexValues": 0,
+    "bounds": {
+      "min": [
+        -12.35749626159668,
+        -0.6980000138282776,
+        -8.560530662536621
+      ],
+      "max": [
+        11.341104507446289,
+        8.78399999141693,
+        8.523194313049316
+      ],
+      "size": [
+        23.69860076904297,
+        9.482000005245208,
+        17.083724975585938
+      ]
+    }
+  },
+  "validation": {
+    "glbHeader": "pass",
+    "finiteVertices": "pass",
+    "triangleCount": "pass",
+    "bounds": "pass",
+    "maxBoundsDifference": 0,
+    "retainedProvenance": "pass",
+    "note": "Reloaded mesh count may increase because glTF separates multi-material mesh primitives."
+  }
+}

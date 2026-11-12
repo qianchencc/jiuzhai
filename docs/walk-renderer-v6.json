@@ -1,0 +1,81 @@
+{
+  "version": 6,
+  "cases": [
+    {
+      "name": "one corner behind eye",
+      "expectedPixels": 7296,
+      "paintedPixels": 7296,
+      "clippedFaces": 1,
+      "maxColorError": 0,
+      "maxDepthError": 2.9290493253064653e-8
+    },
+    {
+      "name": "two corners behind eye",
+      "expectedPixels": 6816,
+      "paintedPixels": 6816,
+      "clippedFaces": 1,
+      "maxColorError": 0,
+      "maxDepthError": 2.8308762001216792e-8
+    },
+    {
+      "name": "corner exactly on eye plane",
+      "expectedPixels": 7680,
+      "paintedPixels": 7680,
+      "clippedFaces": 1,
+      "maxColorError": 0,
+      "maxDepthError": 2.943827515089481e-8
+    },
+    {
+      "name": "crossing near but ahead of eye",
+      "expectedPixels": 4164,
+      "paintedPixels": 4164,
+      "clippedFaces": 1,
+      "maxColorError": 0,
+      "maxDepthError": 2.9758975728100268e-8
+    },
+    {
+      "name": "all behind eye",
+      "expectedPixels": 0,
+      "paintedPixels": 0,
+      "clippedFaces": 0,
+      "maxColorError": 0,
+      "maxDepthError": 0
+    },
+    {
+      "name": "all before near",
+      "expectedPixels": 0,
+      "paintedPixels": 0,
+      "clippedFaces": 0,
+      "maxColorError": 0,
+      "maxDepthError": 0
+    },
+    {
+      "name": "ordinary visible triangle",
+      "expectedPixels": 2270,
+      "paintedPixels": 2270,
+      "clippedFaces": 0,
+      "maxColorError": 0,
+      "maxDepthError": 4.9209759156454425e-8
+    },
+    {
+      "name": "viewport and eye crossing",
+      "expectedPixels": 7680,
+      "paintedPixels": 7680,
+      "clippedFaces": 1,
+      "maxColorError": 0,
+      "maxDepthError": 2.96478293027036e-8
+    },
+    {
+      "name": "very large near plane cut",
+      "expectedPixels": 0,
+      "paintedPixels": 0,
+      "clippedFaces": 0,
+      "maxColorError": 0,
+      "maxDepthError": 0
+    }
+  ],
+  "pixelComparisons": 69120,
+  "coverageMismatches": 0,
+  "maxColorError": 0,
+  "maxDepthError": 4.9209759156454425e-8
+}

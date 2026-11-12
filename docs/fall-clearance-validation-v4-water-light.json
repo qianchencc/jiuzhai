@@ -1,0 +1,35 @@
+{
+  "method": "Actual triangle vertices, edge midpoints and centroids against triangulated terrain",
+  "reports": [
+    {
+      "name": "waterfall-pearl",
+      "samples": 115712,
+      "phases": 8,
+      "penetrations": 0,
+      "minimumActualClearance": 0.016819049350772275
+    },
+    {
+      "name": "waterfall-nuorilang",
+      "samples": 189392,
+      "phases": 8,
+      "penetrations": 0,
+      "minimumActualClearance": 0.06234956008729853
+    },
+    {
+      "name": "waterfall-shuzheng-one",
+      "samples": 31448,
+      "phases": 8,
+      "penetrations": 0,
+      "minimumActualClearance": 0.07559486078489641
+    },
+    {
+      "name": "waterfall-shuzheng-two",
+      "samples": 35360,
+      "phases": 8,
+      "penetrations": 0,
+      "minimumActualClearance": 0.05467251353480525
+    }
+  ],
+  "samples": 371912,
+  "penetrations": 0
+}

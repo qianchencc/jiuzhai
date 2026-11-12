@@ -1,0 +1,96 @@
+{
+  "basins": [
+    {
+      "id": "wuhua",
+      "contour": 144,
+      "maskTriangles": 142,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 1164,
+      "maxTriangles": 316,
+      "escapes": 0
+    },
+    {
+      "id": "changhai",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 780,
+      "maxTriangles": 356,
+      "escapes": 0
+    },
+    {
+      "id": "wucai",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 780,
+      "maxTriangles": 303,
+      "escapes": 0
+    },
+    {
+      "id": "mirror",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 780,
+      "maxTriangles": 352,
+      "escapes": 0
+    },
+    {
+      "id": "nuorilang-head",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 780,
+      "maxTriangles": 470,
+      "escapes": 0
+    },
+    {
+      "id": "shuzheng-upper",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 780,
+      "maxTriangles": 332,
+      "escapes": 0
+    },
+    {
+      "id": "shuzheng-middle",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 0,
+      "faces": 1,
+      "cases": 780,
+      "maxTriangles": 396,
+      "escapes": 0
+    },
+    {
+      "id": "shuzheng-lower",
+      "contour": 96,
+      "maskTriangles": 94,
+      "intersections": 1,
+      "faces": 2,
+      "cases": 780,
+      "maxTriangles": 445,
+      "escapes": 0
+    }
+  ],
+  "totalCases": 6624,
+  "totalTriangles": 681489,
+  "maxTriangles": 470,
+  "capacity": 1024,
+  "escapes": 0,
+  "worstOutside": 0,
+  "bufferEscapes": 0,
+  "maxYError": 1.1444091807533141e-7,
+  "invalidFallAccepted": false,
+  "updateMsMedian": 0.37171999999918626,
+  "updateMsP95": 0.9698880000014469,
+  "durationMs": 14434.230138
+}

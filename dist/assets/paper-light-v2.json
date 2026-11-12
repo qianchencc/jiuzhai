@@ -1,0 +1,202 @@
+{
+  "version": 2,
+  "settings": {
+    "aoRays": 6,
+    "aoDistance": 1.3,
+    "shadowRays": 2,
+    "sunDirection": [
+      -0.5,
+      0.8,
+      0.35
+    ],
+    "sunRadius": 0.026,
+    "epsilon": 0.009,
+    "shadowDistance": 75
+  },
+  "module": "src/landscape-v2.js",
+  "exportName": "buildLandscapeV2",
+  "meshCount": 18,
+  "vertexCount": 697959,
+  "sceneHash": "2a74123d",
+  "triangles": 217663,
+  "bounds": {
+    "min": [
+      -14.282665252685547,
+      -0.8550000190734863,
+      -11.155478477478027
+    ],
+    "max": [
+      14.397798538208008,
+      8.51314926147461,
+      11.611358642578125
+    ]
+  },
+  "meshes": [
+    {
+      "name": "one-continuous-folded-valley",
+      "vertexOffset": 0,
+      "vertexCount": 50412,
+      "hash": "7cd16d15",
+      "flags": 0
+    },
+    {
+      "name": "three-cut-paper-edges",
+      "vertexOffset": 50412,
+      "vertexCount": 6480,
+      "hash": "6bd8fecc",
+      "flags": 0
+    },
+    {
+      "name": "water-wuhua",
+      "vertexOffset": 56892,
+      "vertexCount": 13056,
+      "hash": "4b2c47fd",
+      "flags": 1
+    },
+    {
+      "name": "water-changhai",
+      "vertexOffset": 69948,
+      "vertexCount": 3324,
+      "hash": "bb42da88",
+      "flags": 1
+    },
+    {
+      "name": "water-wucai",
+      "vertexOffset": 73272,
+      "vertexCount": 1098,
+      "hash": "472fbb9f",
+      "flags": 1
+    },
+    {
+      "name": "water-mirror",
+      "vertexOffset": 74370,
+      "vertexCount": 2040,
+      "hash": "c55c4d24",
+      "flags": 1
+    },
+    {
+      "name": "water-nuorilang-head",
+      "vertexOffset": 76410,
+      "vertexCount": 3954,
+      "hash": "2796e86b",
+      "flags": 1
+    },
+    {
+      "name": "water-shuzheng-upper",
+      "vertexOffset": 80364,
+      "vertexCount": 2340,
+      "hash": "ad5f535c",
+      "flags": 1
+    },
+    {
+      "name": "water-shuzheng-middle",
+      "vertexOffset": 82704,
+      "vertexCount": 2088,
+      "hash": "6ceb90b2",
+      "flags": 1
+    },
+    {
+      "name": "water-shuzheng-lower",
+      "vertexOffset": 84792,
+      "vertexCount": 2418,
+      "hash": "18c685cd",
+      "flags": 1
+    },
+    {
+      "name": "thin-cut-lake-shores",
+      "vertexOffset": 87210,
+      "vertexCount": 9792,
+      "hash": "5f95f3dd",
+      "flags": 0
+    },
+    {
+      "name": "waterfall-pearl",
+      "vertexOffset": 97002,
+      "vertexCount": 3564,
+      "hash": "94991e87",
+      "flags": 1
+    },
+    {
+      "name": "waterfall-nuorilang",
+      "vertexOffset": 100566,
+      "vertexCount": 5940,
+      "hash": "41fd30ad",
+      "flags": 1
+    },
+    {
+      "name": "waterfall-shuzheng-one",
+      "vertexOffset": 106506,
+      "vertexCount": 2376,
+      "hash": "bb92e1e1",
+      "flags": 1
+    },
+    {
+      "name": "waterfall-shuzheng-two",
+      "vertexOffset": 108882,
+      "vertexCount": 2772,
+      "hash": "0756e4b2",
+      "flags": 1
+    },
+    {
+      "name": "village-and-continuous-shore-walk",
+      "vertexOffset": 111654,
+      "vertexCount": 69312,
+      "hash": "b3844077",
+      "flags": 0
+    },
+    {
+      "name": "folded-forest-and-understory",
+      "vertexOffset": 180966,
+      "vertexCount": 514485,
+      "hash": "40b3f6a6",
+      "flags": 0
+    },
+    {
+      "name": "submerged-timber-and-water-light",
+      "vertexOffset": 695451,
+      "vertexCount": 2508,
+      "hash": "cbf4dc7c",
+      "flags": 0
+    }
+  ],
+  "bytes": 1396254,
+  "channels": [
+    "ambient visibility / 255",
+    "sun visibility / 255"
+  ],
+  "runtime": "Apply AO in WebGL; AO + static sunlight visibility in the software renderer. Geometry fingerprint checked before any mutation.",
+  "report": {
+    "seconds": 44.864,
+    "vertices": 697959,
+    "uniqueSamples": 414117,
+    "opaqueTriangles": 217663,
+    "ambientMean": 0.5124312684359318,
+    "ambientMinimum": 0,
+    "ambientPercentiles": [
+      0.00784313725490196,
+      0.24313725490196078,
+      0.5019607843137255,
+      0.8274509803921568,
+      1
+    ],
+    "sunMean": 0.7559253733343345,
+    "fullyShadowedFraction": 0.23737210924997026
+  },
+  "validation": {
+    "applied": true,
+    "meshCount": 18,
+    "vertexCount": 697959,
+    "sceneHash": "2a74123d",
+    "mode": "ambient + static sun",
+    "minimumFactor": 0.43,
+    "meanFactor": 0.6677560515657762
+  },
+  "fingerprint": {
+    "algorithm": "FNV1a over every quantized position/normal component, exact indices, counts, order, flags, and relative transforms",
+    "positionAndNormalQuantum": 0.0001,
+    "relativeTransformQuantum": 0.000001,
+    "originalBitwiseReference": "595b9b34",
+    "visibilityReusedWithoutResampling": true,
+    "referenceSourceVerified": true
+  }
+}

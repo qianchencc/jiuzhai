@@ -1,0 +1,27 @@
+{
+  "renderer": "software-geometry",
+  "sceneVersion": 5,
+  "paperLight": "ready",
+  "cameraCloseRadius": 12.5,
+  "forestCloseRadius": 9.49,
+  "staticTriangles": 212368,
+  "people": 0,
+  "navigation": "free",
+  "renderQuality": "full",
+  "observedSettledFrameMs": [
+    21.5,
+    25.2
+  ],
+  "webgl2VisuallyVerified": false,
+  "applicationErrorsObserved": 0,
+  "browserExtensionMetadataErrorsExcluded": true,
+  "viewsInspected": [
+    "daylight overview",
+    "Nuorilang close",
+    "Pearl Shoal close",
+    "forest close with rotated camera",
+    "source-lake edge click",
+    "dusk overview"
+  ],
+  "actualMotionRecording": "preview-v5-falls-ripples.mp4"
+}

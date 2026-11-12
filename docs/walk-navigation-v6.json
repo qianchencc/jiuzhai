@@ -1,0 +1,256 @@
+{
+  "navigation": {
+    "radius": 0.075,
+    "maxSlope": 1.18,
+    "maxSubstep": 0.035,
+    "floorTriangles": 31709,
+    "floorCells": 1780,
+    "deckSegments": 610,
+    "deckCells": 296,
+    "trees": 274,
+    "houses": 4,
+    "lakes": 8,
+    "falls": 4,
+    "buildMilliseconds": 56.05,
+    "floor": "actual static mesh triangles",
+    "freeTerrain": true
+  },
+  "spawns": [
+    {
+      "id": "home",
+      "x": 0,
+      "y": 1.670317798614502,
+      "z": -0.15,
+      "kind": "ground",
+      "distance": 0,
+      "openDirections": 32,
+      "viewRelativeTravel": [
+        0.3200000000000002,
+        0.32,
+        0.32000000000000006,
+        0.32000000000000006
+      ]
+    },
+    {
+      "id": "changhai",
+      "x": -8.711580347471907,
+      "y": 3.712811503571095,
+      "z": -5.529864689517066,
+      "kind": "boardwalk",
+      "distance": 2.017132784362718,
+      "openDirections": 32,
+      "viewRelativeTravel": [
+        0.31999999999999773,
+        0.31999999999999773,
+        0.31999999999999773,
+        0.31999999999999773
+      ]
+    },
+    {
+      "id": "wucai",
+      "x": -9.172790823925116,
+      "y": 2.3482195507120043,
+      "z": 0.5685836464887948,
+      "kind": "boardwalk",
+      "distance": 2.262001312624933,
+      "openDirections": 32,
+      "viewRelativeTravel": [
+        0.31999999999999673,
+        0.31999999999999673,
+        0.3199999999999985,
+        0.29321382466324974
+      ]
+    },
+    {
+      "id": "wuhua",
+      "x": 5.135637750439973,
+      "y": 3.4188582945074857,
+      "z": -1.1718235780715576,
+      "kind": "ground",
+      "distance": 2.52,
+      "openDirections": 23,
+      "viewRelativeTravel": [
+        0.05721380882695393,
+        0.31999999999999934,
+        0.26633551736328365,
+        0.3199999999999961
+      ]
+    },
+    {
+      "id": "pearl",
+      "x": 7.105613291661905,
+      "y": 1.717529218341972,
+      "z": 5.119007427504336,
+      "kind": "boardwalk",
+      "distance": 4.133379294562239,
+      "openDirections": 29,
+      "viewRelativeTravel": [
+        0.3199999999999987,
+        0.2237936294879423,
+        0.06912613580030408,
+        0.3199999999999987
+      ]
+    },
+    {
+      "id": "mirror",
+      "x": 6.400180224761761,
+      "y": 1.7604230046622265,
+      "z": 5.1652564754444175,
+      "kind": "boardwalk",
+      "distance": 2.0707096390548316,
+      "openDirections": 22,
+      "viewRelativeTravel": [
+        0.31999999999999834,
+        0.12975532960829936,
+        0.31999999999999834,
+        0.023208310338329596
+      ]
+    },
+    {
+      "id": "nuorilang",
+      "x": -1.3090460744097303,
+      "y": 0.07608598656706693,
+      "z": 9.752342650205314,
+      "kind": "boardwalk",
+      "distance": 4.867753459637145,
+      "openDirections": 32,
+      "viewRelativeTravel": [
+        0.3199999999999987,
+        0.3199999999999987,
+        0.31999999999999984,
+        0.31999999999999995
+      ]
+    },
+    {
+      "id": "shuzheng",
+      "x": 1.2000000000000002,
+      "y": 0.0837024356197314,
+      "z": 10.5,
+      "kind": "boardwalk",
+      "distance": 2.7,
+      "openDirections": 32,
+      "viewRelativeTravel": [
+        0.3200000000000003,
+        0.3200000000000003,
+        0.3200000000000003,
+        0.3200000000000003
+      ]
+    }
+  ],
+  "waterTests": [
+    {
+      "id": "wuhua",
+      "cases": 492,
+      "rejected": 492,
+      "deck": 0
+    },
+    {
+      "id": "changhai",
+      "cases": 134,
+      "rejected": 134,
+      "deck": 0
+    },
+    {
+      "id": "wucai",
+      "cases": 43,
+      "rejected": 43,
+      "deck": 0
+    },
+    {
+      "id": "mirror",
+      "cases": 84,
+      "rejected": 84,
+      "deck": 0
+    },
+    {
+      "id": "nuorilang-head",
+      "cases": 73,
+      "rejected": 71,
+      "deck": 2
+    },
+    {
+      "id": "shuzheng-upper",
+      "cases": 86,
+      "rejected": 86,
+      "deck": 0
+    },
+    {
+      "id": "shuzheng-middle",
+      "cases": 58,
+      "rejected": 58,
+      "deck": 0
+    },
+    {
+      "id": "shuzheng-lower",
+      "cases": 53,
+      "rejected": 53,
+      "deck": 0
+    }
+  ],
+  "islandTests": 360,
+  "treeTests": 274,
+  "houseTests": 4,
+  "bridgePoints": 4,
+  "bridgeExamples": [
+    {
+      "path": 0,
+      "index": 252,
+      "x": 3.017851932048412,
+      "y": 1.9335,
+      "z": 3.3310916990189607,
+      "kind": "boardwalk"
+    },
+    {
+      "path": 0,
+      "index": 254,
+      "x": 3.053010032520426,
+      "y": 1.9335,
+      "z": 3.466124392288739,
+      "kind": "boardwalk"
+    },
+    {
+      "path": 0,
+      "index": 256,
+      "x": 3.0971038818755323,
+      "y": 1.9335,
+      "z": 3.601497598882474,
+      "kind": "boardwalk"
+    },
+    {
+      "path": 0,
+      "index": 258,
+      "x": 3.1488099955542364,
+      "y": 1.9335,
+      "z": 3.7342615969325754,
+      "kind": "boardwalk"
+    }
+  ],
+  "deckClearanceChecks": 432,
+  "maxDeckPenetration": 0,
+  "cliff": {
+    "start": {
+      "x": 3.8039981414890756,
+      "y": 1.8146980266385957,
+      "z": 4.653614165979629,
+      "kind": "boardwalk"
+    },
+    "result": {
+      "x": 3.8039981414890756,
+      "y": 1.8146980266385957,
+      "z": 4.745835750067546,
+      "kind": "boardwalk",
+      "blocked": true
+    }
+  },
+  "moves": 4000,
+  "blocked": 625,
+  "wetGround": 0,
+  "outside": 0,
+  "nonfinite": 0,
+  "groundChecks": 37,
+  "maxFloorError": 4.2136433231476644e-15,
+  "moveMsMedian": 0.020641000000068743,
+  "moveMsP95": 0.05643400000008114,
+  "failures": [],
+  "durationMilliseconds": 7952.256219
+}

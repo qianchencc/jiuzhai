@@ -1,0 +1,94 @@
+{
+  "suite": "First-person camera contract checks",
+  "passed": 17,
+  "failed": 0,
+  "total": 17,
+  "scope": "Real Three.js perspective camera and orbit controller; independent deterministic navigation fixture. DOM key/blur/pointer-lock dispatch and real landscape collisions are checked separately.",
+  "results": [
+    {
+      "name": "Exact return to a composed orbit view",
+      "passed": true
+    },
+    {
+      "name": "Exact return to home when home was settled",
+      "passed": true
+    },
+    {
+      "name": "Exact return when entering during the home animation",
+      "passed": true
+    },
+    {
+      "name": "Exact return during a home animation that changes only azimuth",
+      "passed": true
+    },
+    {
+      "name": "Exact return when entering during a free orbit animation",
+      "passed": true
+    },
+    {
+      "name": "Repeated entry and return, animated and reduced motion",
+      "passed": true,
+      "details": {
+        "cycles": 24
+      }
+    },
+    {
+      "name": "Transitions own the camera and do not walk",
+      "passed": true
+    },
+    {
+      "name": "An interrupted entry returns safely",
+      "passed": true
+    },
+    {
+      "name": "Forward and right follow the viewing direction",
+      "passed": true,
+      "details": {
+        "orientations": 4,
+        "directions": 2
+      }
+    },
+    {
+      "name": "Diagonal movement is normalized and fast walking is bounded",
+      "passed": true,
+      "details": {
+        "straightDistance": 1.7936158415895231,
+        "diagonalDistance": 1.7936158415895256,
+        "fastDistance": 2.9575580366635776
+      }
+    },
+    {
+      "name": "Level-ground eye height has no head bob",
+      "passed": true,
+      "details": {
+        "minimumEyeY": 0.64,
+        "maximumEyeY": 0.64,
+        "frames": 600
+      }
+    },
+    {
+      "name": "Large and invalid frame deltas cannot teleport",
+      "passed": true
+    },
+    {
+      "name": "Stop clears held movement and inertia immediately",
+      "passed": true
+    },
+    {
+      "name": "Blocked navigation cannot leak motion across the boundary",
+      "passed": true
+    },
+    {
+      "name": "Failed spawn leaves the original orbit intact",
+      "passed": true
+    },
+    {
+      "name": "Return after viewport resize retains pose and updates aspect",
+      "passed": true
+    },
+    {
+      "name": "Explicit home exit returns to the normal home camera",
+      "passed": true
+    }
+  ]
+}

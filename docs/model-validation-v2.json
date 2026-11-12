@@ -1,0 +1,102 @@
+{
+  "artifact": "dist/assets/jiuzhai-paper-model.glb",
+  "format": "glTF 2.0 binary",
+  "version": 2,
+  "threeVersion": "180",
+  "bytes": 22354572,
+  "mebibytes": 21.319,
+  "provenance": "Hand-constructed procedural Three.js paper geometry guided by generated concept art. Not a neural image-to-3D conversion.",
+  "lighting": {
+    "applied": true,
+    "meshCount": 18,
+    "vertexCount": 697959,
+    "sceneHash": "2a74123d",
+    "mode": "ambient",
+    "minimumFactor": 0.43,
+    "meanFactor": 0.6956308541556341
+  },
+  "original": {
+    "meshes": 18,
+    "vertices": 697959,
+    "triangles": 232653,
+    "coloredVertices": 697959,
+    "invalidValues": 0,
+    "colorRange": [
+      0.018773024901747704,
+      0.93894362449646
+    ],
+    "bounds": {
+      "min": [
+        -14.282665252685547,
+        -0.8550000190734863,
+        -11.155478477478027
+      ],
+      "max": [
+        14.397798538208008,
+        8.51314926147461,
+        11.611358642578125
+      ],
+      "size": [
+        28.680463790893555,
+        9.368149280548096,
+        22.766837120056152
+      ]
+    }
+  },
+  "reconstructed": {
+    "meshes": 18,
+    "vertices": 697959,
+    "triangles": 232653,
+    "coloredVertices": 697959,
+    "invalidValues": 0,
+    "colorRange": [
+      0.018768596932936598,
+      0.9389486533913176
+    ],
+    "bounds": {
+      "min": [
+        -14.282665252685547,
+        -0.8550000190734863,
+        -11.155478477478027
+      ],
+      "max": [
+        14.397798538208008,
+        8.51314926147461,
+        11.611358642578125
+      ],
+      "size": [
+        28.680463790893555,
+        9.368149280548096,
+        22.766837120056152
+      ]
+    }
+  },
+  "exportEncoding": {
+    "vertexColor": "UNSIGNED_SHORT normalized",
+    "colorComponentBits": 16,
+    "omittedRuntimeAttributes": [
+      "windWeight"
+    ],
+    "omittedWindAttributeBytes": 2384388,
+    "runtimeGeometryUnchanged": true,
+    "maxColorQuantizationError": 0.000007629507310313866,
+    "maxRoundtripColorError": 0.000007629507310313866,
+    "colorErrorTolerance": 0.000016,
+    "verifiedColoredMeshes": 18,
+    "targetMaximumBytes": 24000000,
+    "sitesMaximumBytes": 26214400,
+    "sitesHeadroomBytes": 3859828
+  },
+  "validation": {
+    "glbHeader": "pass",
+    "geometryAndColorValues": "finite",
+    "triangleCount": "pass",
+    "bounds": "pass",
+    "maxBoundsDifference": 0,
+    "everyMeshRetainsColor": "pass",
+    "retainedProvenance": "pass",
+    "ambientOnlyNoBakedSun": "pass",
+    "everyColorComponentWithinTolerance": "pass",
+    "publicationFileBudget": "pass"
+  }
+}

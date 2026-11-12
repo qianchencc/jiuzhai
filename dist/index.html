@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4eddf">
+  <meta name="description" content="九寨·水行记。自由观看一座会呼吸的纸雕山水，感受湖水、瀑布、秋林与光。">
+  <title>九寨 · 水行记 — The Shape of Water</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f4eddf'/%3E%3Cpath d='m8 45 17-27 10 17 8-12 13 22M18 45l9-16 10 16' fill='none' stroke='%23454b40' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-mountain" viewBox="0 0 40 32"><path d="m2 27 12-20 8 13 6-10 11 17M8 27l8-13 8 13M13 10l3 6 3-2M25 15l3 4 3-3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m10 5-5 4H2v6h3l5 4ZM14 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 16 6-10 5 8 3-5 5 8M4 21h16M4 3v4m16-4v4M2 5h4m12 0h4"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h5l2-3h4l2 3h5v13H3Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><path d="M3 4h18v16H3ZM3 16l5-5 5 5 3-3 5 5"/><circle cx="15.5" cy="8.5" r="1.5"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="m4 16-1 5 5-1L20 8l-4-4Zm9-9 4 4M16 4l2-2 4 4-2 2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-7-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  </svg>
+
+  <main class="experience" aria-label="九寨·水行记，交互式纸雕山水">
+    <div id="scene-container" role="img" aria-label="九寨沟三维山水。拖动旋转，滚轮缩放，按住 Shift 拖动平移，双击靠近眼前的风景。"></div>
+    <div id="photo-overlays" aria-hidden="true"></div>
+    <div class="scene-wash" aria-hidden="true"></div>
+    <div id="markers" aria-label="眼前的山水"></div>
+    <div id="cursor-feedback" class="cursor-feedback" aria-hidden="true" hidden><span class="cursor-ring"></span><span id="cursor-label"></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="山水手记，回到全景"><svg class="brand-mountain"><use href="#i-mountain"/></svg><span class="brand-name">山水手记<small>FIELD NOTES · 001</small></span></a>
+      <nav class="scene-controls" aria-label="观景工具">
+        <button id="time-toggle" class="control time-control" aria-label="切换为暮色" aria-pressed="false"><svg><use href="#i-sun"/></svg><span>晴日</span></button>
+        <button id="sound-toggle" class="control icon-control" title="开启山水声音" aria-label="开启山水声音" aria-pressed="false"><svg><use href="#i-sound"/></svg></button>
+        <button id="home-view" class="control icon-control" title="回到山水全景" aria-label="回到山水全景"><svg><use href="#i-home"/></svg></button>
+        <button id="capture-postcard" class="control icon-control" title="收藏此刻画面" aria-label="收藏此刻画面"><svg><use href="#i-camera"/></svg></button>
+        <span class="control-divider" aria-hidden="true"></span>
+        <button id="studio-toggle" class="control writing-control" aria-expanded="false" aria-controls="memory-studio"><svg><use href="#i-pencil"/></svg><span>留一页</span></button>
+        <button id="about-toggle" class="control icon-control" title="翻开创作手稿" aria-label="翻开创作手稿" aria-expanded="false" aria-controls="about-sheet"><svg><use href="#i-book"/></svg></button>
+      </nav>
+    </header>
+
+    <section class="hero-copy" aria-labelledby="work-title">
+      <p class="hero-location">四川 · 九寨沟</p>
+      <h1 id="work-title">九寨<span class="title-divider" aria-hidden="true">·</span>水行记</h1>
+      <p class="hero-english">The shape <em>of water.</em></p>
+    </section>
+
+    <section class="scene-caption" aria-label="眼前的风景">
+      <div class="scene-heading"><h2 id="scene-title">九寨山水</h2><span id="scene-en">JIUZHAI VALLEY</span></div>
+      <p id="scene-line">风过林梢，水有回声。</p>
+    </section>
+
+    <aside class="view-tools" aria-label="视角控制">
+      <div class="zoom-controls"><button id="zoom-out" class="control icon-control" aria-label="拉远视角" title="拉远视角"><svg><use href="#i-minus"/></svg></button><span aria-hidden="true"></span><button id="zoom-in" class="control icon-control" aria-label="靠近风景" title="靠近风景"><svg><use href="#i-plus"/></svg></button></div>
+      <p class="mouse-hints"><span>拖动环顾</span><i>·</i><span>滚轮缩放</span><i>·</i><span>Shift 拖动平移</span><i>·</i><span>双击靠近</span></p>
+      <p class="touch-hints">单指环顾 <i>·</i> 双指缩放与平移</p>
+    </aside>
+
+    <section id="memory-studio" class="memory-studio" aria-labelledby="memory-heading" hidden>
+      <button id="memory-close" class="control memory-close" aria-label="收起这一页"><svg><use href="#i-close"/></svg></button>
+      <div class="memory-heading"><h2 id="memory-heading">把这一刻留在 <span id="memory-place">树正群海</span></h2><p>一句话，一张照片，留在山水之间。</p></div>
+      <div class="memory-composer"><img id="memory-photo-preview" alt="将放入山水的旅行照片" hidden><label class="sr-only" for="memory-line">这一刻的记忆</label><textarea id="memory-line" rows="2" maxlength="1200" placeholder="那一天，我记得……"></textarea><button id="memory-save" class="memory-save">落在此处<svg><use href="#i-arrow"/></svg></button></div>
+      <div class="memory-meta"><label class="photo-input" for="memory-photo"><svg><use href="#i-photo"/></svg><span>放入照片</span></label><input id="memory-photo" class="sr-only" type="file" accept="image/jpeg,image/png,image/webp"><button id="memory-remove-photo" class="text-button" hidden>移除照片</button><label class="date-input"><span class="sr-only">记忆的日期</span><input id="memory-date" type="date" aria-label="记忆的日期"></label><p id="memory-status" role="status" aria-live="polite"></p><span class="local-note">保存在此浏览器</span></div>
+    </section>
+
+    <footer class="edition-note"><span>A LIVING PAPER LANDSCAPE</span><span>四川九寨沟</span></footer>
+    <div id="loading" class="loading" role="status" aria-live="polite"><div class="paper-loader" aria-hidden="true"><span></span><span></span><span></span></div><p id="loading-message">山水正在苏醒</p><span class="loading-subline">A landscape, slowly unfolding.</span></div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </main>
+
+  <section id="about-sheet" class="about-sheet" aria-labelledby="about-title" hidden>
+    <header class="about-header"><span class="about-folio">山水手记 <i>/</i> 创作手稿</span><button id="about-close" class="about-close control" aria-label="回到山水"><span>回到山水</span><svg><use href="#i-close"/></svg></button></header>
+    <div class="about-intro"><p class="eyebrow">FROM A PAGE TO A LANDSCAPE</p><h2 id="about-title">从一页纸，<br>到一段山水。</h2><p class="about-deck">让水面映出光，<br>让风经过每一片树林。</p></div>
+    <div class="about-body"><figure class="concept-figure"><img src="assets/jiuzhai-colour-reference.png" alt="九寨沟纸雕构图概念：群山围拢蓝绿色湖泊，瀑布衔接上下水系，栈道穿过奶油色森林与藏式村落。" loading="lazy"><figcaption><span>纸层、颜色与微缩的尺度</span><span>视觉参考 · 用户提供</span></figcaption></figure>
+      <div class="making-notes"><section><span class="note-number">I.</span><h3>先让山水找到彼此。</h3><p>长海的深蓝，五花海的青碧。珊瑚、杏桃与奶油金的秋林，围住一片清澈的水。</p></section><section><span class="note-number">II.</span><h3>把纸的层次，留在空间里。</h3><p>雪纸覆着山脊，湖岸叠出由浅入深的色阶。杉枝与扇叶一层层展开，水帘在岩台之间分流、落下。</p></section><section><span class="note-number">III.</span><h3>风景有自己的呼吸。</h3><p>湖面缓缓起伏，瀑布持续落下，秋林随风摇动。自由转动视角，触动水面，也可以在喜欢的风景旁留一页记忆。</p></section><a id="model-download" class="model-download" href="assets/jiuzhai-paper-model.glb?v=4-water-light" download><span>带走这座纸上山水<small>GLB · 21.7 MB</small></span><svg><use href="#i-download"/></svg></a></div>
+    </div>
+    <footer class="about-footer"><span>JIUZHAI — THE SHAPE OF WATER</span><p>这是一座经艺术化重构的纸雕山水，景点的比例与距离经过压缩。</p><span>FIELD NOTES · 001</span></footer>
+  </section>
+  <script type="module" src="app.js?v=4-water-light"></script>
+</body>
+</html>

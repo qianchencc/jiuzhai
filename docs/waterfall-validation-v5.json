@@ -1,0 +1,40 @@
+{
+  "buildAndSamplesMs": 6632.460877,
+  "metadata": {
+    "meshes": 48,
+    "dynamicVertices": 8358,
+    "lakeCurrentLines": 32,
+    "fallingWaterStrokes": 88,
+    "foamPatches": 22,
+    "animatedVeilVertices": 5417,
+    "foamBands": 0,
+    "mistRibbons": 4,
+    "fallingAndSettledLeaves": 28,
+    "waterfallSurfaceModel": "continuous thin veil with travelling geometry and aeration",
+    "actualBasinClipping": true,
+    "softwareGeometry": true
+  },
+  "veilVertices": 5417,
+  "bad": 0,
+  "escape": 0,
+  "totalSamples": 761653,
+  "changed": 4925,
+  "maxUpdate": 37.121737000000394,
+  "medianUpdate": 3.080493000000388,
+  "minNormal": 0,
+  "maxRunout": 1.0130000000000008,
+  "use": {
+    "lake-breath-wuhua": 178,
+    "lake-breath-changhai": 62,
+    "lake-breath-wucai": 22,
+    "lake-breath-mirror": 34,
+    "lake-breath-nuorilang-head": 80,
+    "lake-breath-shuzheng-upper": 30,
+    "lake-breath-shuzheng-middle": 26,
+    "lake-breath-shuzheng-lower": 30,
+    "aerated-outflow-pearl": 224,
+    "aerated-outflow-nuorilang": 234,
+    "aerated-outflow-shuzheng-one": 134,
+    "aerated-outflow-shuzheng-two": 162
+  }
+}

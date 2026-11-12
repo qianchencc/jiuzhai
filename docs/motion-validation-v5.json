@@ -1,0 +1,10 @@
+{
+  "actualBrowserFrames": 84,
+  "capturedMilliseconds": 7688,
+  "camera": "fixed, radius 12.50",
+  "interaction": "single click on upper source lake near spill edge at frame 18",
+  "fallRoiChangedPixelsAbove12": 9325,
+  "fallRoiMeanAbsoluteRgbChange": 4.393048469387755,
+  "synthesizedFrames": false,
+  "encoding": "15 fps; captured frames held or repeated to preserve capture timestamps"
+}
